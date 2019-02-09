@@ -1,16 +1,11 @@
-# flutter_routing_bug
+# Minimal Test Case for Router Handler keep getting called
 
-A new Flutter project.
+## Issue
+https://github.com/theyakka/fluro/issues/57
 
-## Getting Started
+## Step to reproduce
+1) Put breakpoint in the handler function
 
-This project is a starting point for a Flutter application.
+2) Run the project and route to the `MyOtherPage` with `FloatingActionButton`
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+3) Tap on the `TextFormField` and it should call the breakpoint.
